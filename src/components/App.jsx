@@ -1,26 +1,33 @@
 import React from 'react';
-// import {SectionFirst} from './Section/SectionFirst';
+import {SectionFirst} from './Section/SectionFirst';
 // import {SectionSec} from './Section/SectionSec'
 import {PhoneBook} from './PhoneBook/PhoneBook';
 // import {Contacts} from './Contacts/Contacts';
-// import {Filter} from './Filter/Filter';
+import {Filter} from './Filter/Filter';
 // import { getContacts } from 'redux/selectors';
 // import { useSelector } from "react-redux";
 export function App(){
   // const contactsArray = useSelector(getContacts);
 
   return (
-    <div>
-      {/* <SectionFirst title="My Phonebook" > */}
+    <div style={{
+      height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            padding:'10px 0px'
+          }}>
+      <SectionFirst title="My Phonebook" >
          <PhoneBook/>
-       {/* </SectionFirst>
-      <SectionSec title="Contacts">
-        {contactsArray.length > 1 && (
+       </SectionFirst>
+       {/* <SectionSec title="Contacts">
+         {contactsArray.length > 1 && ( */}
            <Filter /> 
-            )} 
-            {contactsArray.length > 0 ? ( 
-             <Contacts /> 
-             ) : (  */}
+             {/* )} 
+             {contactsArray.length > 0 ? (  */}
+              {/* <Contacts /> 
+              ) : (  */}
               <p>Your phonebook is empty.Please add a new contact.</p>
               {/* )} 
             </SectionSec> */}
