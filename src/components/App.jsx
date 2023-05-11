@@ -1,7 +1,7 @@
 import React from 'react';
 // import {SectionFirst} from './Section/SectionFirst';
 // import {SectionSec} from './Section/SectionSec'
-// import {PhoneBook} from './PhoneBook/PhoneBook';
+import {PhoneBook} from './PhoneBook/PhoneBook';
 // import {Contacts} from './Contacts/Contacts';
 // import {Filter} from './Filter/Filter';
 // import { getContacts } from 'redux/selectors';
@@ -11,9 +11,9 @@ export function App(){
 
   return (
     <div>
-      {/* <SectionFirst title="My Phonebook" >
+      {/* <SectionFirst title="My Phonebook" > */}
          <PhoneBook/>
-       </SectionFirst>
+       {/* </SectionFirst>
       <SectionSec title="Contacts">
         {contactsArray.length > 1 && (
            <Filter /> 
