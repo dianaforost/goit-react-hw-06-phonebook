@@ -1,13 +1,13 @@
 import React from 'react';
 import {SectionFirst} from './Section/SectionFirst';
-// import {SectionSec} from './Section/SectionSec'
+import {SectionSec} from './Section/SectionSec'
 import {PhoneBook} from './PhoneBook/PhoneBook';
 // import {Contacts} from './Contacts/Contacts';
 import {Filter} from './Filter/Filter';
-// import { getContacts } from 'redux/selectors';
-// import { useSelector } from "react-redux";
+import { getContacts } from 'redux/selectors';
+import { useSelector } from "react-redux";
 export function App(){
-  // const contactsArray = useSelector(getContacts);
+  const contactsArray = useSelector(getContacts);
 
   return (
     <div style={{
@@ -21,16 +21,16 @@ export function App(){
       <SectionFirst title="My Phonebook" >
          <PhoneBook/>
        </SectionFirst>
-       {/* <SectionSec title="Contacts">
-         {contactsArray.length > 1 && ( */}
+       <SectionSec title="Contacts">
+         {contactsArray.length > 1 && (
            <Filter /> 
-             {/* )} 
-             {contactsArray.length > 0 ? (  */}
+              )} 
+             {/* {contactsArray.length > 0 ? (   */}
               {/* <Contacts /> 
               ) : (  */}
               <p>Your phonebook is empty.Please add a new contact.</p>
-              {/* )} 
-            </SectionSec> */}
+               {/* )}  */}
+            </SectionSec> 
       </div>
       );
     }
