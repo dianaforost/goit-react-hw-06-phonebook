@@ -1,0 +1,27 @@
+.list{
+    width: 30%;
+    padding: 0px;
+    list-style: none;
+}
+.item{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 6px;
+}
+.itemTitle{
+    width: 40%;
+}
+.value{
+    width: 40%;
+}
+.btn{
+    cursor: pointer;
+    background-color: gray;
+    border-color: gray;
+    color: #fff;
+    padding: 5px 6px;
+}
+.icon{
+    fill: #fff;
+}
