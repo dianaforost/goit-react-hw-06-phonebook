@@ -1,9 +1,9 @@
 import React from 'react';
-import {SectionFirst} from './Section/SectionFirst';
-import {SectionSec} from './Section/SectionSec'
-import {PhoneBook} from './PhoneBook/PhoneBook';
-import {Contacts} from './Contacts/Contacts';
-import {Filter} from './Filter/Filter';
+// import {SectionFirst} from './Section/SectionFirst';
+// import {SectionSec} from './Section/SectionSec'
+// import {PhoneBook} from './PhoneBook/PhoneBook';
+// import {Contacts} from './Contacts/Contacts';
+// import {Filter} from './Filter/Filter';
 // import { getContacts } from 'redux/selectors';
 // import { useSelector } from "react-redux";
 export function App(){
