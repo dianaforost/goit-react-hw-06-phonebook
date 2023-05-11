@@ -2,7 +2,7 @@ import React from 'react';
 import {SectionFirst} from './Section/SectionFirst';
 import {SectionSec} from './Section/SectionSec'
 import {PhoneBook} from './PhoneBook/PhoneBook';
-// import {Contacts} from './Contacts/Contacts';
+import {Contacts} from './Contacts/Contacts';
 import {Filter} from './Filter/Filter';
 import { getContacts } from 'redux/selectors';
 import { useSelector } from "react-redux";
@@ -25,11 +25,11 @@ export function App(){
          {contactsArray.length > 1 && (
            <Filter /> 
               )} 
-             {/* {contactsArray.length > 0 ? (   */}
-              {/* <Contacts /> 
-              ) : (  */}
+             {contactsArray.length > 0 ? (  
+              <Contacts /> 
+              ) : ( 
               <p>Your phonebook is empty.Please add a new contact.</p>
-               {/* )}  */}
+               )} 
             </SectionSec> 
       </div>
       );
